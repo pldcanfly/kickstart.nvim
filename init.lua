@@ -49,15 +49,15 @@ require('custom.lazy')
 
 
 require('custom.langs/go')
-
-require('custom.plugins/telescope')
-require('custom.plugins/treesitter')
-require('custom.plugins/which-key')
-require('custom.plugins/cmp')
+require('custom.plugins/setup/telescope')
+require('custom.plugins/setup/treesitter')
+require('custom.plugins/setup/which-key')
+require('custom.plugins/setup/cmp')
 
 require('custom.lsp')
 
 require('custom.keymap')
 require('custom.settings')
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

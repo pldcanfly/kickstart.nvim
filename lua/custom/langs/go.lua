@@ -8,15 +8,15 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   group = format_sync_grp,
 })
 -- Format current buffer using LSP.
-vim.api.nvim_create_autocmd({ "BufWritePre" },
-  {
-    pattern = { "*.templ" },
-    callback = function()
-      -- Format the current buffer using Neovim's built-in LSP (Language Server Protocol).
-      vim.lsp.buf.format()
-    end,
-  }
-)
+-- vim.api.nvim_create_autocmd({ "BufWritePre" },
+--   {
+--     pattern = { "*.templ" },
+--     callback = function()
+--       -- Format the current buffer using Neovim's built-in LSP (Language Server Protocol).
+--       vim.lsp.buf.format()
+--     end,
+--   }
+-- )
 vim.filetype.add({
   extension = {
     templ = "templ",
