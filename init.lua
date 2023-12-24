@@ -35,29 +35,29 @@ are first encountering a few different constructs in your nvim config.
 I hope you enjoy your Neovim journey,
 - TJ
 
-P.S. You can delete this when you're done too. It's your config now :)
+P.S. You can delete this when you're done too. It's your config now :
 --]]
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
---  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+--  NOTE: Must happen before plugins are required  otherwise wrong leader will be used
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require('custom.lazy')
+require 'custom.lazy'
 
 
-require('custom.langs/go')
-require('custom.plugins/setup/telescope')
-require('custom.plugins/setup/treesitter')
-require('custom.plugins/setup/which-key')
-require('custom.plugins/setup/cmp')
+require 'custom.langs.go'
+require 'custom.plugins.setup.telescope'
+require 'custom.plugins.setup.treesitter'
+require 'custom.plugins.setup.which-key'
+require 'custom.plugins.setup.cmp'
 
-require('custom.lsp')
+require 'custom.lsp'
 
-require('custom.keymap')
-require('custom.settings')
+require 'custom.keymap'
+require 'custom.settings'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
