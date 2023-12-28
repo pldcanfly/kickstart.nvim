@@ -1,4 +1,3 @@
-
 -- [[ Configure LSP ]]
 --  This function gets run when an LSP connects to a particular buffer.
 local on_attach = function(_, bufnr)
@@ -60,8 +59,10 @@ require('mason-lspconfig').setup()
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
-  -- gopls = {filetypes = { 'go', 'gomod', 'gowork', 'gotmpl'}},
-  -- pyright = {},
+  gopls = { filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' } },
+  templ = { filetypes = { 'templ' } },
+  --html = { filetypes = { 'html', 'templ' } },
+  -- pyright = {},,
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
